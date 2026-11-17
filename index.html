@@ -99,6 +99,7 @@
         else{hintEl.className='share-hint';hintEl.textContent='把这张二维码放进简历、作品集或 PPT，对方扫码即可打开本页。需要高清印刷版可运行 tools/make_qr.py 生成。'}
       }
       document.getElementById('shareBtn').onclick=()=>{refresh();document.getElementById('shareOverlay').classList.add('show')};
+      if(location.hash==='#share')document.getElementById('shareBtn').click();
       document.getElementById('copyBtn').onclick=async()=>{
         try{await navigator.clipboard.writeText(qrUrl);toast('链接已复制')}
         catch(e){const t=document.createElement('textarea');t.value=qrUrl;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();toast('链接已复制')}
