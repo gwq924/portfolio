@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>成果档案 · 个人展示页</title>
+  <meta name="theme-color" content="#f7f7f3" />
+  <meta name="description" content="个人成果档案：荣誉奖项、学业成绩、科研成果与技能证书。扫一扫即可查看全部证明材料。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="成果档案 · 个人展示页" />
+  <meta property="og:description" content="扫码查看我的成果证明材料" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231d2a33'/%3E%3Ctext x='16' y='22' font-size='16' font-family='Georgia,serif' fill='%23e7b58e' text-anchor='middle'%3E%E6%88%90%3C/text%3E%3C/svg%3E" />
+  <style>
+    :root{--ink:#17212b;--muted:#71808d;--paper:#f7f7f3;--card:#fff;--line:#e5e9e6;--accent:#bf6b3e;--accent-2:#e7b58e;--dark:#1d2a33}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
+    .shell{max-width:1180px;margin:auto;padding:28px 28px 70px}.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:72px}.brand{font-weight:800;letter-spacing:.08em;font-size:15px}.brand span{color:var(--accent)}.edit{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 16px;color:var(--ink);cursor:pointer;font-weight:600}.edit:hover{border-color:var(--accent);color:var(--accent)}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:end;margin-bottom:70px}.eyebrow{color:var(--accent);font-size:13px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}.hero h1{font-family:Georgia,"Songti SC",serif;font-weight:500;font-size:clamp(42px,6vw,76px);line-height:1.04;margin:15px 0 22px;letter-spacing:-.04em}.hero p{max-width:560px;color:var(--muted);font-size:16px;margin:0}.hero-card{background:var(--dark);color:#fff;border-radius:24px;padding:28px;position:relative;overflow:hidden;min-height:220px}.hero-card:after{content:"";position:absolute;width:180px;height:180px;border:1px solid rgba(255,255,255,.18);border-radius:50%;right:-45px;top:-45px;box-shadow:0 0 0 25px rgba(255,255,255,.04),0 0 0 50px rgba(255,255,255,.03)}.hero-card .label{font-size:12px;letter-spacing:.14em;color:#b7c2c8}.hero-card strong{display:block;font-family:Georgia,serif;font-size:30px;font-weight:500;margin:36px 0 5px}.hero-card small{color:#bdc7cb}.rule{height:1px;background:var(--line);margin:0 0 30px}.nav{display:flex;gap:10px;overflow:auto;margin-bottom:38px;padding-bottom:4px}.nav button{white-space:nowrap;border:1px solid var(--line);background:transparent;border-radius:999px;padding:9px 16px;color:var(--muted);cursor:pointer}.nav button.active,.nav button:hover{background:var(--ink);border-color:var(--ink);color:#fff}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:22px}.section-head h2{margin:0;font-family:Georgia,serif;font-size:32px;font-weight:500}.section-head p{margin:0;color:var(--muted);font-size:13px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;cursor:pointer;transition:.25s;position:relative}.card:hover{transform:translateY(-4px);box-shadow:0 14px 35px rgba(30,45,55,.1)}.thumb{height:245px;background:#eef0ec;display:flex;align-items:center;justify-content:center;overflow:hidden}.thumb img{width:100%;height:100%;object-fit:contain}.card-body{padding:16px 17px 18px}.tag{font-size:11px;color:var(--accent);font-weight:800;letter-spacing:.08em}.card h3{font-size:16px;margin:5px 0 2px}.card p{font-size:12px;color:var(--muted);margin:0}.empty{grid-column:1/-1;padding:55px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:18px}.footer{display:flex;justify-content:space-between;align-items:center;margin-top:70px;color:var(--muted);font-size:12px}.status{display:inline-flex;align-items:center;gap:7px}.dot{width:7px;height:7px;background:#6ca87a;border-radius:50%}
+    .overlay{position:fixed;inset:0;background:rgba(17,27,34,.65);display:none;align-items:center;justify-content:center;padding:20px;z-index:5}.overlay.show{display:flex}.modal{background:#fff;width:min(880px,100%);max-height:92vh;border-radius:22px;overflow:auto;position:relative}.modal-close{position:absolute;right:16px;top:14px;border:0;background:#fff;font-size:24px;cursor:pointer;z-index:2}.preview{background:#eef0ec;min-height:400px;display:flex;align-items:center;justify-content:center}.preview img{max-width:100%;max-height:65vh;object-fit:contain}.modal-copy{padding:22px 25px 25px}.modal-copy h3{margin:0 0 3px;font-family:Georgia,serif;font-size:28px}.modal-copy p{color:var(--muted);margin:0}.modal-actions{display:flex;justify-content:space-between;align-items:center;margin-top:18px}.arrow{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 14px;cursor:pointer}.arrow:hover{border-color:var(--accent);color:var(--accent)}
+    .editor{padding:25px}.editor h3{font-family:Georgia,serif;font-size:25px;margin:0 0 16px}.field{margin-bottom:14px}.field label{display:block;font-size:12px;color:var(--muted);margin-bottom:5px}.field input,.field select{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px 12px;font:inherit}.editor-list{display:grid;gap:8px;max-height:330px;overflow:auto;margin-top:15px}.edit-row{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:10px 12px;border:1px solid var(--line);border-radius:10px;font-size:13px}.danger{border:0;background:transparent;color:#b35f58;cursor:pointer}.primary{border:0;background:var(--ink);color:#fff;border-radius:999px;padding:10px 17px;cursor:pointer}.hint{font-size:12px;color:var(--muted);margin:12px 0 0}
+    @media(max-width:760px){.shell{padding:20px 17px 45px}.topbar{margin-bottom:45px}.hero{grid-template-columns:1fr;gap:25px;margin-bottom:45px}.hero-card{min-height:180px}.grid{grid-template-columns:repeat(2,1fr);gap:12px}.thumb{height:190px}.card-body{padding:13px}.section-head{align-items:start;gap:12px;flex-direction:column}.footer{margin-top:45px;display:block}.footer .status{margin-top:8px}}
+    @media(max-width:460px){.grid{grid-template-columns:1fr}.thumb{height:250px}}
+    /* ---- 扫码分享 ---- */
+    .topbar-actions{display:flex;align-items:center;gap:9px}
+    .share-btn{background:var(--ink);color:#fff;border-color:var(--ink)}
+    .share-btn:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+    .share-modal{width:min(520px,100%)}
+    .share-body{padding:30px 28px 26px;text-align:center}
+    .share-body .eyebrow{font-size:11px}
+    .share-body h3{font-family:Georgia,"Songti SC",serif;font-size:26px;font-weight:500;margin:8px 0 6px}
+    .share-body .sub{color:var(--muted);font-size:13px;margin:0 0 20px}
+    .qr-frame{width:min(290px,70vw);margin:0 auto;padding:13px;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 10px 30px rgba(30,45,55,.08)}
+    .qr-frame canvas{display:block;width:100%;height:auto;border-radius:6px;image-rendering:pixelated}
+    .qr-frame .qr-loading{font-size:12px;color:var(--muted);padding:70px 0}
+    .share-url{display:flex;align-items:center;gap:8px;margin:16px auto 0;max-width:400px;background:#f3f4ef;border:1px solid var(--line);border-radius:999px;padding:6px 7px 6px 14px}
+    .share-url code{flex:1;min-width:0;background:none;padding:0;font-size:12px;color:#3c4a55;text-align:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    .copy{border:1px solid var(--line);background:#fff;border-radius:999px;padding:5px 13px;font-size:12px;cursor:pointer;color:var(--ink);white-space:nowrap}
+    .copy:hover{border-color:var(--accent);color:var(--accent)}
+    .share-actions{display:flex;gap:9px;justify-content:center;margin-top:18px;flex-wrap:wrap}
+    .share-actions .arrow{padding:10px 15px;font-size:13px}
+    .share-hint{font-size:12px;color:var(--muted);margin:14px 0 0;line-height:1.75}
+    .share-hint.warn{color:#b35f58}
+    .toast{position:fixed;left:50%;bottom:36px;transform:translateX(-50%) translateY(12px);background:var(--dark);color:#fff;font-size:13px;padding:9px 18px;border-radius:999px;opacity:0;pointer-events:none;transition:.28s;z-index:20}
+    .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+    @media print{.shell{display:none!important}.overlay{display:none!important}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar"><div class="brand">PORTFOLIO <span>·</span> 成果档案</div><div class="topbar-actions"><button class="edit share-btn" id="shareBtn">扫码分享</button><button class="edit" id="editBtn">编辑内容</button></div></header>
+    <section class="hero"><div><div class="eyebrow">个人成果档案 · 2026</div><h1>把每一份积累，<br><em>变成可见的证明。</em></h1><p>这里记录我的学习成果、研究经历与实践证明。欢迎通过分类导航，快速了解我的专业能力与成长轨迹。</p></div><div class="hero-card"><div class="label">A PERSONAL ARCHIVE</div><strong>成果 · 证书 · 作品</strong><small>开放浏览 · 持续更新</small></div></section>
+    <div class="rule"></div><nav class="nav" id="nav"></nav>
+    <section><div class="section-head"><div><h2 id="sectionTitle">全部成果</h2><p id="sectionMeta"></p></div><p>点击卡片查看大图</p></div><div class="grid" id="grid"></div></section>
+    <footer class="footer"><span>Designed for a clearer first impression.</span><span class="status"><i class="dot"></i>资料持续更新中</span></footer>
+  </main>
+  <div class="overlay" id="previewOverlay"><div class="modal"><button class="modal-close" data-close="previewOverlay">×</button><div class="preview"><img id="previewImg" alt="成果预览"></div><div class="modal-copy"><div class="tag" id="previewTag"></div><h3 id="previewTitle"></h3><p id="previewDesc"></p><div class="modal-actions"><button class="arrow" id="prevBtn">← 上一项</button><button class="arrow" id="nextBtn">下一项 →</button></div></div></div></div>
+  <div class="overlay" id="editOverlay"><div class="modal"><button class="modal-close" data-close="editOverlay">×</button><div class="editor"><h3>编辑成果档案</h3><div class="field"><label>新增图片文件名（请先放入 dist/assets）</label><input id="fileName" placeholder="例如：实习证明.jpg"></div><div class="field"><label>成果名称</label><input id="fileTitle" placeholder="例如：寒假实习证明"></div><div class="field"><label>所属分类</label><select id="fileCategory"><option value="荣誉奖项">荣誉奖项</option><option value="学业成绩">学业成绩</option><option value="科研成果">科研成果</option><option value="技能证书">技能证书</option></select></div><button class="primary" id="addBtn">添加到档案</button><p class="hint">删除操作只影响当前浏览器中的档案数据，适合你后续自行维护内容。</p><div class="editor-list" id="editorList"></div></div></div></div>
+  <div class="overlay" id="shareOverlay"><div class="modal share-modal"><button class="modal-close" data-close="shareOverlay">×</button><div class="share-body"><div class="eyebrow">SCAN TO VIEW</div><h3>扫码查看我的成果档案</h3><p class="sub">用手机相机或微信「扫一扫」即可打开完整页面</p><div class="qr-frame" id="qrFrame"><div class="qr-loading">二维码生成中…</div></div><div class="share-url"><code id="shareUrl">—</code><button class="copy" id="copyBtn">复制链接</button></div><div class="share-actions"><button class="primary" id="downloadQr">下载二维码</button><button class="arrow" id="printQr">打印二维码</button></div><p class="share-hint" id="shareHint"></p></div></div></div>
+  <div class="toast" id="toast"></div>
+  <script src="assets/qrlib.js"></script>
+  <script>
+    const seed=[
+      ['本科-成绩单.jpg','本科成绩单','学业成绩','核心课程与综合成绩证明'],['研究生一等学业奖学金.png','研究生一等学业奖学金','荣誉奖项','研究生阶段奖学金证明'],['优秀研究生.png','优秀研究生','荣誉奖项','研究生阶段荣誉证明'],['本科-国家励志.jpg','国家励志奖学金','荣誉奖项','本科阶段国家励志奖学金'],['本科-二等奖学金.jpg','本科二等奖学金','荣誉奖项','本科阶段综合表现证明'],['本科-三等奖学金.jpg','本科三等奖学金','荣誉奖项','本科阶段综合表现证明'],['本科-三好学生.jpg','三好学生','荣誉奖项','本科阶段荣誉称号'],['本科-优秀共青团员.jpg','优秀共青团员','荣誉奖项','本科阶段荣誉称号'],['本科-水准测量比赛.jpg','水准测量比赛','科研成果','专业竞赛与实践成果'],['本科-毕设比赛.jpg','毕业设计比赛','科研成果','毕业设计成果证明'],['论文1.png','学术论文 · 01','科研成果','论文成果材料'],['论文2.png','学术论文 · 02','科研成果','论文成果材料'],['论文3.png','学术论文 · 03','科研成果','论文成果材料'],['发明专利.png','发明专利','科研成果','知识产权成果证明'],['实用新型专利.png','实用新型专利','科研成果','知识产权成果证明'],['工法.png','工法成果','科研成果','工程实践成果'],['6级.png','大学英语六级','技能证书','语言能力证明'],['4级.png','大学英语四级','技能证书','语言能力证明'],['计算机二级.jpg','全国计算机二级','技能证书','计算机应用能力证明']
+    ];
+    let items=JSON.parse(localStorage.getItem('archiveItems')||'null')||seed.map(x=>({file:x[0],title:x[1],cat:x[2],desc:x[3]}));let active='全部成果',current=0,viewItems=[];
+    const cats=['全部成果','荣誉奖项','学业成绩','科研成果','技能证书'];
+    function renderNav(){nav.innerHTML=cats.map(c=>`<button class="${c===active?'active':''}" data-cat="${c}">${c}</button>`).join('');nav.querySelectorAll('button').forEach(b=>b.onclick=()=>{active=b.dataset.cat;render()})}
+    function render(){renderNav();viewItems=active==='全部成果'?items:items.filter(x=>x.cat===active);sectionTitle.textContent=active;sectionMeta.textContent=`${viewItems.length} 项成果`;grid.innerHTML=viewItems.length?viewItems.map((x,i)=>`<article class="card" data-i="${i}"><div class="thumb"><img src="assets/${encodeURIComponent(x.file)}" alt="${x.title}" onerror="this.style.display='none'"></div><div class="card-body"><div class="tag">${x.cat}</div><h3>${x.title}</h3><p>${x.desc}</p></div></article>`).join(''):'<div class="empty">这个分类暂时还没有成果，点击右上角“编辑内容”即可添加。</div>';grid.querySelectorAll('.card').forEach(c=>c.onclick=()=>openPreview(+c.dataset.i))}
+    function openPreview(i){current=i;const x=viewItems[i];previewImg.src='assets/'+encodeURIComponent(x.file);previewTag.textContent=x.cat;previewTitle.textContent=x.title;previewDesc.textContent=x.desc;previewOverlay.classList.add('show')}
+    function step(n){if(!viewItems.length)return;current=(current+n+viewItems.length)%viewItems.length;openPreview(current)}
+    function renderEditor(){editorList.innerHTML=items.map((x,i)=>`<div class="edit-row"><span>${x.title}<small style="color:#9aa3a8"> · ${x.cat}</small></span><button class="danger" data-del="${i}">删除</button></div>`).join('');editorList.querySelectorAll('[data-del]').forEach(b=>b.onclick=()=>{items.splice(+b.dataset.del,1);save();renderEditor();render()})}
+    function save(){localStorage.setItem('archiveItems',JSON.stringify(items))}
+    editBtn.onclick=()=>{renderEditor();editOverlay.classList.add('show')};addBtn.onclick=()=>{if(!fileName.value.trim()||!fileTitle.value.trim())return;items.unshift({file:fileName.value.trim(),title:fileTitle.value.trim(),cat:fileCategory.value,desc:'个人成果档案材料'});save();fileName.value='';fileTitle.value='';renderEditor();render()};prevBtn.onclick=()=>step(-1);nextBtn.onclick=()=>step(1);document.querySelectorAll('[data-close]').forEach(b=>b.onclick=()=>document.getElementById(b.dataset.close).classList.remove('show'));document.querySelectorAll('.overlay').forEach(o=>o.onclick=e=>{if(e.target===o)o.classList.remove('show')});render();
+    /* ---------------- 扫码分享 ---------------- */
+    (function(){
+      const frame=document.getElementById('qrFrame'),urlEl=document.getElementById('shareUrl'),
+            hintEl=document.getElementById('shareHint'),toastEl=document.getElementById('toast');
+      let qrCanvas=null,qrUrl='',toastTimer=null;
+      function toast(msg){toastEl.textContent=msg;toastEl.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toastEl.classList.remove('show'),1900)}
+      function currentUrl(){const m=(window.__SITE_URL__||'').trim();return m||location.href.split('#')[0].split('?')[0]}
+      function hasOverride(){return !!(window.__SITE_URL__||'').trim()}
+      function buildQr(url){
+        const qr=qrcode(0,'M');qr.addData(url);qr.make();
+        const n=qr.getModuleCount(),quiet=4,total=n+quiet*2,scale=Math.max(3,Math.floor(720/total)),px=total*scale;
+        const cv=document.createElement('canvas');cv.width=px;cv.height=px;
+        const ctx=cv.getContext('2d');
+        ctx.fillStyle='#ffffff';ctx.fillRect(0,0,px,px);
+        ctx.fillStyle='#17212b';
+        for(let r=0;r<n;r++)for(let c=0;c<n;c++)if(qr.isDark(r,c))ctx.fillRect((c+quiet)*scale,(r+quiet)*scale,scale,scale);
+        return cv;
+      }
+      function refresh(){
+        qrUrl=currentUrl();urlEl.textContent=qrUrl;urlEl.title=qrUrl;
+        try{qrCanvas=buildQr(qrUrl);frame.innerHTML='';frame.appendChild(qrCanvas)}
+        catch(e){frame.innerHTML='<div class="qr-loading">二维码生成失败</div>';qrCanvas=null}
+        const isFile=location.protocol==='file:'&&!hasOverride();
+        const isLocalHost=/^https?:\/\/(localhost|127\.0\.0\.1|\[::1\])/i.test(qrUrl);
+        if(isFile){hintEl.className='share-hint warn';hintEl.innerHTML='你正在用<b>本地文件</b>方式打开，手机扫这个码打不开。请先用 tools/publish_github.py 发布到 GitHub Pages，或运行 tools/serve.py 用局域网地址扫码预览。'}
+        else if(isLocalHost){hintEl.className='share-hint warn';hintEl.textContent='这是本机调试地址，只有这台电脑能打开。手机扫码请改用局域网 IP，或发布后的公网地址。'}
+        else{hintEl.className='share-hint';hintEl.textContent='把这张二维码放进简历、作品集或 PPT，对方扫码即可打开本页。需要高清印刷版可运行 tools/make_qr.py 生成。'}
+      }
+      document.getElementById('shareBtn').onclick=()=>{refresh();document.getElementById('shareOverlay').classList.add('show')};
+      document.getElementById('copyBtn').onclick=async()=>{
+        try{await navigator.clipboard.writeText(qrUrl);toast('链接已复制')}
+        catch(e){const t=document.createElement('textarea');t.value=qrUrl;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();toast('链接已复制')}
+      };
+      document.getElementById('downloadQr').onclick=()=>{
+        if(!qrCanvas)return;
+        qrCanvas.toBlob(b=>{const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='成果档案-二维码.png';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),5000);toast('二维码已下载')});
+      };
+      document.getElementById('printQr').onclick=()=>{
+        if(!qrCanvas)return;
+        const w=window.open('','_blank');
+        if(!w){toast('请允许弹出窗口');return}
+        const img=qrCanvas.toDataURL('image/png');
+        const safe=qrUrl.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
+        w.document.write('<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><title>成果档案 · 二维码</title><style>body{margin:0;font-family:"Microsoft YaHei",sans-serif;background:#fff;color:#17212b;display:flex;min-height:100vh;align-items:center;justify-content:center}.card{text-align:center;padding:36px}.card h1{font-size:22px;margin:0 0 4px;font-weight:700;letter-spacing:.04em}.card p{margin:0 0 18px;color:#71808d;font-size:13px}.card img{width:340px;height:340px;display:block;margin:0 auto 14px}.u{font-size:11px;color:#71808d;word-break:break-all}@media print{@page{margin:14mm}}</style></head><body><div class="card"><h1>个人成果档案</h1><p>扫码查看完整证明材料</p><img src="'+img+'" alt="二维码"><div class="u">'+safe+'</div></div><scr'+'ipt>window.onload=function(){setTimeout(function(){window.print()},250)}</scr'+'ipt></body></html>');
+        w.document.close();
+      };
+    })();
+  </script>
+</body></html>
